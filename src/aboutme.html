@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Righteous&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>About me</title>
   </head>
   <body>
     <nav>
-      <h3>Yohannes</h3>
-      <ul>
+      <h3 class="logo"><span>Y</span>ohannes</h3>
+      <ul class="links">
         <li><a href="/src/index.html">Home</a></li>
         <li><a href="/src/aboutme.html">About me</a></li>
         <li><a href="/src/portfolio.html">Portfolio</a></li>
@@ -19,14 +27,13 @@
     </nav>
 
     <main>
-      <article>
-        <h1>About me</h1>
-        <figure id="profile-image">
+      <article class="main-aboutme">
+        <h1 class="page-title">About me</h1>
+        <figure class="profile-image">
           <img
+            id="profile-image"
             src="/src/images/photo.jpg"
             alt="profile image"
-            width="300"
-            height="400"
           />
         </figure>
         <p class="aboutme">
@@ -40,7 +47,7 @@
 
         <section>
           <div id="skills">
-            <h3>Skills</h3>
+            <h3 class="title">Skills</h3>
             <ul>
               <li>Programming Languages: Python, Java, JavaScript, C</li>
               <li>Front-end development: HTML, CSS, JavaScript, React</li>
@@ -51,7 +58,7 @@
             </ul>
           </div>
           <div id="experience">
-            <h3>Experience</h3>
+            <h3 class="title">Experience</h3>
             <ul>
               <li>Over 2 years of experience as a full-stack web developer.</li>
               <li>
@@ -66,7 +73,7 @@
           </div>
 
           <div id="education">
-            <h3>Education</h3>
+            <h3 class="title">Education</h3>
             <ul>
               <li>Primary School - Ethio National School</li>
               <li>Secondary School - Ethio National School</li>
