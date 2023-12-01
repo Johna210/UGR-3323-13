@@ -27,6 +27,7 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: grid;
+  margin-right: 0;
 }
 .logo {
   grid-column: 1/2;
