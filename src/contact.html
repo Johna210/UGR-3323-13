@@ -4,58 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link
+      text-light
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/01821c8375.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <nav>
-      <h3>Yohannes</h3>
-      <ul>
-        <li><a href="/src/index.html">Home</a></li>
-        <li><a href="/src/aboutme.html">About me</a></li>
-        <li><a href="/src/portfolio.html">Portfolio</a></li>
-        <li><a href="/src/resume.html">Resume</a></li>
-        <li><a href="/src/hobbies.html">Hobbies</a></li>
-        <li><a href="/src/contact.html">Contact</a></li>
-      </ul>
+  <body class="bg-black text-light">
+    <nav class="p-3 navbar navbar-expand-lg sticky-top navbar-dark bg-black">
+      <h3 class="h2 text-light fw-bolder">
+        <span class="text-danger">Y</span>ohannes
+      </h3>
+      <button
+        class="navbar-toggler btn btn-danger"
+        type="button "
+        data-bs-toggle="collapse"
+        data-bs-target="#main-div"
+        aria-controls="main-div"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end align-center"
+        id="main-div"
+      >
+        <ul class="navbar-nav align-items-center hover-danger">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/aboutme.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/hobbies.html">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/src/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <section class="feedback">
-        <h4>Name:</h4>
-        <input type="text" placeholder="Type Name" />
-        <h4>Email:</h4>
+    <main class="m-5 row">
+      <h3 class="text-danger fw-bolder pb-3">Contact Me</h3>
 
-        <input type="text" placeholder="Type Email" />
-        <h4>Message:</h4>
+      <section class="col-lg-6 col-md-6 row order-lg-1 order-md-1 text-center">
+        <h5 class="pl-2">Name:</h5>
+        <input
+          class="form-control col-lg-4 pl-2"
+          type="text"
+          placeholder="Type Name"
+        />
+        <h5 class="pl-2">Email:</h5>
 
-        <input type="text" id="emailLink" placeholder="Write Message" />
+        <input
+          class="form-control col-lg-4 pl-2"
+          type="text"
+          placeholder="Type Email"
+        />
+        <h5 class="pl-2">Message:</h5>
+
+        <textarea
+          type="text"
+          id="emailLink"
+          placeholder="Write Message"
+          class="form-control col-lg-4 pl-2"
+        ></textarea>
         <div class="send">
-          <a href="mailto:solomonjohna21@gmail.com">Send Email</a>
+          <a
+            href="mailto:solomonjohna21@gmail.com"
+            class="btn btn-outline-danger mt-4 mb-4"
+            >Send Email</a
+          >
         </div>
       </section>
-      <article>
-        <h2>Contact Me</h2>
-        <h4>Email - solomonjohna21@gmail.com</h4>
-        <h4>
-          Phone number - +251911359492 <a href="tel:+251911359492">call</a>
-        </h4>
-        <div class="socials">
-          <h4>Social Media</h4>
-          <div class="social">
-            <a href="">Fb</a>
+      <article class="col-lg-6 order-lg-0 order-md-0 col-md-6">
+        <h6 class="pb-3">Email - solomonjohna21@gmail.com</h6>
+        <h6 class="pb-3">
+          Phone number - +251911359492
+          <a href="tel:+251911359492"
+            ><i class="fa-solid fa-phone fa-lg" style="color: #cd1818"></i
+          ></a>
+        </h6>
+        <div class="row">
+          <h6 class="col-lg-2 col-md-2 col-sm-4 col-5">Social Media</h6>
+          <div class="col-1">
+            <a href=""
+              ><i class="fa-brands fa-facebook fa-lg" style="color: #cd1818"></i
+            ></a>
           </div>
-          <div class="social">
+          <div class="col-1">
             <a href="https://www.linkedin.com/in/yohannes-solomon-521386297/">
-              Linkedin</a
-            >
+              <i class="fa-brands fa-linkedin fa-lg" style="color: #cd1818"></i
+            ></a>
           </div>
-          <div class="social">
-            <a href="https://twitter.com/Johnasolomon11">Twitter</a>
+          <div class="col-1">
+            <a href="https://twitter.com/Johnasolomon11"
+              ><i
+                class="fa-brands fa-x-twitter fa-lg"
+                style="color: #cd1818"
+              ></i
+            ></a>
           </div>
-          <div class="social">
-            <a href="https://t.me/johna21">telegram</a>
+          <div class="col-1">
+            <a href="https://t.me/johna21"
+              ><i class="fa-brands fa-telegram fa-lg" style="color: #cd1818"></i
+            ></a>
           </div>
         </div>
       </article>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
